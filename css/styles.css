@@ -25,7 +25,7 @@ body {
   height: 95vh;
 
   /* background-image to specify gradients, last element stays on top */
-  background-image: linear-gradient(to right bottom, #7ed56fd3, #28b485d3),
+  background-image: linear-gradient(to right bottom, #7ed56fd4, #28b485d4),
     url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
@@ -35,4 +35,45 @@ body {
   /* Triangle */
   /* clip-path: polygon(50% 0, 50% 0, 0 100%, 100% 100%); */
   /* Top Left, Top Right, Bottom Right, Bottom Left */
+
+  position: relative;
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo {
+  height: 35px;
+  /* width scales accordingly */
+}
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.heading-primary-main {
+  display: block;
+
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
 }
