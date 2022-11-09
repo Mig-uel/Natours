@@ -86,3 +86,15 @@ The three pillars to writing great HTML and CSS, as well as building great websi
 - The universal selector \* has no specificity value (0, 0, 0, 0)
 - Rely more on specificity than on the order of selectors
 - But, rely on order when using 3rd=party stylesheets - always put your author stylesheet last
+
+### How CSS Values Are Processed?
+
+- Each property has an initial value, used if nothing is declared (and if there is no inheritance)
+- Browsers specify a root font-size for each page (usually 16px)
+- Percentages and relative values are always converted to pixels
+- Percentages are measured relative to their parent's font-size, is used to specify font-size
+- Percentages are measured relative to their parents width, if used to specify lengths
+- em are measured relative to their parent font-size, if used to specify font-size
+- em are measured relative to their current font-size, if used to specify lengths
+- rem are always measured relative to the document's root font-size
+- vh and vw are simply percentage measurements of the viewport's height and width
